@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="testing brackets" AsOfDateTime="2019-04-04T23:57:07" CreationDateTime="2019-04-04T23:57:07" SourceSystem="REDCap" SourceSystemVersion="8.2.2">
+<Study OID="Project.TestingBrackets">
+<GlobalVariables>
+	<StudyName>testing brackets</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "testing brackets".</StudyDescription>
+	<ProtocolName>testing brackets</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel></redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField></redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:Purpose>0</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes></redcap:ProjectNotes>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.TestingBrackets_2019-04-04_2357" Name="testing brackets" redcap:RecordIdField="record_id">
+	<FormDef OID="Form.teams" Name="Teams" Repeating="No" redcap:FormName="teams">
+		<ItemGroupRef ItemGroupOID="teams.record_id" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="teams.teams_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="teams.teams_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.round_1" Name="Round 1" Repeating="No" redcap:FormName="round_1">
+		<ItemGroupRef ItemGroupOID="round_1.round_1_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="round_1.round_1_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.round_2" Name="Round 2" Repeating="No" redcap:FormName="round_2">
+		<ItemGroupRef ItemGroupOID="round_2.round_2_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="round_2.round_2_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.round_3" Name="Round 3" Repeating="No" redcap:FormName="round_3">
+		<ItemGroupRef ItemGroupOID="round_3.round_3_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="round_3.round_3_complete" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="teams.record_id" Name="Teams" Repeating="No">
+		<ItemRef ItemOID="record_id" Mandatory="No" redcap:Variable="record_id"/>
+		<ItemRef ItemOID="redcap_survey_identifier" Mandatory="No" redcap:Variable="redcap_survey_identifier"/>
+		<ItemRef ItemOID="teams_timestamp" Mandatory="No" redcap:Variable="teams_timestamp"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="teams.teams_timestamp" Name="Teams" Repeating="No">
+		<ItemRef ItemOID="teams_timestamp" Mandatory="No" redcap:Variable="teams_timestamp"/>
+		<ItemRef ItemOID="desc1" Mandatory="No" redcap:Variable="desc1"/>
+		<ItemRef ItemOID="team1" Mandatory="No" redcap:Variable="team1"/>
+		<ItemRef ItemOID="team2" Mandatory="No" redcap:Variable="team2"/>
+		<ItemRef ItemOID="team3" Mandatory="No" redcap:Variable="team3"/>
+		<ItemRef ItemOID="team4" Mandatory="No" redcap:Variable="team4"/>
+		<ItemRef ItemOID="team5" Mandatory="No" redcap:Variable="team5"/>
+		<ItemRef ItemOID="team6" Mandatory="No" redcap:Variable="team6"/>
+		<ItemRef ItemOID="team7" Mandatory="No" redcap:Variable="team7"/>
+		<ItemRef ItemOID="team8" Mandatory="No" redcap:Variable="team8"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="teams.teams_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="teams_complete" Mandatory="No" redcap:Variable="teams_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_1.round_1_timestamp" Name="Round 1" Repeating="No">
+		<ItemRef ItemOID="round_1_timestamp" Mandatory="No" redcap:Variable="round_1_timestamp"/>
+		<ItemRef ItemOID="game1" Mandatory="No" redcap:Variable="game1"/>
+		<ItemRef ItemOID="game2" Mandatory="No" redcap:Variable="game2"/>
+		<ItemRef ItemOID="game3" Mandatory="No" redcap:Variable="game3"/>
+		<ItemRef ItemOID="game4" Mandatory="No" redcap:Variable="game4"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_1.round_1_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="round_1_complete" Mandatory="No" redcap:Variable="round_1_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_2.round_2_timestamp" Name="Round 2" Repeating="No">
+		<ItemRef ItemOID="round_2_timestamp" Mandatory="No" redcap:Variable="round_2_timestamp"/>
+		<ItemRef ItemOID="game5" Mandatory="No" redcap:Variable="game5"/>
+		<ItemRef ItemOID="game6" Mandatory="No" redcap:Variable="game6"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_2.round_2_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="round_2_complete" Mandatory="No" redcap:Variable="round_2_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_3.round_3_timestamp" Name="Round 3" Repeating="No">
+		<ItemRef ItemOID="round_3_timestamp" Mandatory="No" redcap:Variable="round_3_timestamp"/>
+		<ItemRef ItemOID="game7" Mandatory="No" redcap:Variable="game7"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="round_3.round_3_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="round_3_complete" Mandatory="No" redcap:Variable="round_3_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="record_id" Name="record_id" DataType="text" Length="999" redcap:Variable="record_id" redcap:FieldType="text">
+		<Question><TranslatedText>Record ID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="redcap_survey_identifier" Name="redcap_survey_identifier" DataType="text" Length="999" redcap:Variable="redcap_survey_identifier">
+		<Question><TranslatedText>Survey Identifier</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="teams_timestamp" Name="teams_timestamp" DataType="datetime" Length="999" redcap:Variable="teams_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="teams_timestamp" Name="teams_timestamp" DataType="datetime" Length="999" redcap:Variable="teams_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="desc1" Name="desc1" DataType="text" Length="999" redcap:Variable="desc1" redcap:FieldType="descriptive">
+		<Question><TranslatedText>Welcome!  Click &#039;Submit&#039; to begin.</TranslatedText><redcap:FormattedTranslatedText>&lt;center&gt;Welcome!  Click &#039;Submit&#039; to begin.&lt;/center&gt;</redcap:FormattedTranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team1" Name="team1" DataType="text" Length="999" redcap:Variable="team1" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Cheerios&#039;">
+		<Question><TranslatedText>Team 1</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team2" Name="team2" DataType="text" Length="999" redcap:Variable="team2" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Froot Loops&#039;">
+		<Question><TranslatedText>Team 2</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team3" Name="team3" DataType="text" Length="999" redcap:Variable="team3" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Frosted Flakes&#039;">
+		<Question><TranslatedText>Team 3</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team4" Name="team4" DataType="text" Length="999" redcap:Variable="team4" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Golden Grahams&#039;">
+		<Question><TranslatedText>Team 4</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team5" Name="team5" DataType="text" Length="999" redcap:Variable="team5" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Lucky Charms&#039;">
+		<Question><TranslatedText>Team 5</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team6" Name="team6" DataType="text" Length="999" redcap:Variable="team6" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Trix&#039;">
+		<Question><TranslatedText>Team 6</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team7" Name="team7" DataType="text" Length="999" redcap:Variable="team7" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Pops&#039;">
+		<Question><TranslatedText>Team 7</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="team8" Name="team8" DataType="text" Length="999" redcap:Variable="team8" redcap:FieldType="text" redcap:FieldAnnotation="@HIDDEN-SURVEY @DEFAULT=&#039;Smacks&#039;">
+		<Question><TranslatedText>Team 8</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="teams_complete" Name="teams_complete" DataType="text" Length="1" redcap:Variable="teams_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="teams_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_1_timestamp" Name="round_1_timestamp" DataType="datetime" Length="999" redcap:Variable="round_1_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="game1" Name="game1" DataType="text" Length="1" redcap:Variable="game1" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 1</TranslatedText></Question>
+		<CodeListRef CodeListOID="game1.choices"/>
+	</ItemDef>
+	<ItemDef OID="game2" Name="game2" DataType="text" Length="1" redcap:Variable="game2" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 2</TranslatedText></Question>
+		<CodeListRef CodeListOID="game2.choices"/>
+	</ItemDef>
+	<ItemDef OID="game3" Name="game3" DataType="text" Length="1" redcap:Variable="game3" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 3</TranslatedText></Question>
+		<CodeListRef CodeListOID="game3.choices"/>
+	</ItemDef>
+	<ItemDef OID="game4" Name="game4" DataType="text" Length="1" redcap:Variable="game4" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 4</TranslatedText></Question>
+		<CodeListRef CodeListOID="game4.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_1_complete" Name="round_1_complete" DataType="text" Length="1" redcap:Variable="round_1_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="round_1_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_2_timestamp" Name="round_2_timestamp" DataType="datetime" Length="999" redcap:Variable="round_2_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="game5" Name="game5" DataType="text" Length="1" redcap:Variable="game5" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 5</TranslatedText></Question>
+		<CodeListRef CodeListOID="game5.choices"/>
+	</ItemDef>
+	<ItemDef OID="game6" Name="game6" DataType="text" Length="1" redcap:Variable="game6" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 6</TranslatedText></Question>
+		<CodeListRef CodeListOID="game6.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_2_complete" Name="round_2_complete" DataType="text" Length="1" redcap:Variable="round_2_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="round_2_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_3_timestamp" Name="round_3_timestamp" DataType="datetime" Length="999" redcap:Variable="round_3_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="game7" Name="game7" DataType="text" Length="1" redcap:Variable="game7" redcap:FieldType="radio" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Game 7</TranslatedText></Question>
+		<CodeListRef CodeListOID="game7.choices"/>
+	</ItemDef>
+	<ItemDef OID="round_3_complete" Name="round_3_complete" DataType="text" Length="1" redcap:Variable="round_3_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="round_3_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="teams_complete.choices" Name="teams_complete" DataType="text" redcap:Variable="teams_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game1.choices" Name="game1" DataType="text" redcap:Variable="game1">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[team1]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[team8]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game2.choices" Name="game2" DataType="text" redcap:Variable="game2">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[team2]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[team7]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game3.choices" Name="game3" DataType="text" redcap:Variable="game3">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[team3]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[team6]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game4.choices" Name="game4" DataType="text" redcap:Variable="game4">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[team4]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[team5]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="round_1_complete.choices" Name="round_1_complete" DataType="text" redcap:Variable="round_1_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game5.choices" Name="game5" DataType="text" redcap:Variable="game5">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[game1]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[game4]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game6.choices" Name="game6" DataType="text" redcap:Variable="game6">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[game2]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[game3]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="round_2_complete.choices" Name="round_2_complete" DataType="text" redcap:Variable="round_2_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="game7.choices" Name="game7" DataType="text" redcap:Variable="game7">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>[game5]</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>[game6]</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="round_3_complete.choices" Name="round_3_complete" DataType="text" redcap:Variable="round_3_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+<ClinicalData StudyOID="Project.TestingBrackets" MetaDataVersionOID="Metadata.TestingBrackets_2019-04-04_2357">
+	<SubjectData SubjectKey="1" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="1"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 12:34:12"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2017-08-28 12:34:38"/>
+					<ItemData ItemOID="game1" Value="1"/>
+					<ItemData ItemOID="game2" Value="1"/>
+					<ItemData ItemOID="game3" Value="1"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2017-08-28 12:34:49"/>
+					<ItemData ItemOID="game5" Value="2"/>
+					<ItemData ItemOID="game6" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2017-08-28 12:34:54"/>
+					<ItemData ItemOID="game7" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="2" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="2"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 13:00:20"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2017-08-28 13:00:49"/>
+					<ItemData ItemOID="game1" Value="1"/>
+					<ItemData ItemOID="game2" Value="1"/>
+					<ItemData ItemOID="game3" Value="1"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2017-08-28 13:01:20"/>
+					<ItemData ItemOID="game5" Value="2"/>
+					<ItemData ItemOID="game6" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2017-08-28 13:01:36"/>
+					<ItemData ItemOID="game7" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="3" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="3"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 13:07:11"/>
+					<ItemData ItemOID="team1" Value="Blue Demon"/>
+					<ItemData ItemOID="team2" Value="El Santo"/>
+					<ItemData ItemOID="team3" Value="Octagon"/>
+					<ItemData ItemOID="team4" Value="Rey Misterio"/>
+					<ItemData ItemOID="team5" Value="Los malosos"/>
+					<ItemData ItemOID="team6" Value="Dos Mascaras"/>
+					<ItemData ItemOID="team7" Value="Ni me acuerdo"/>
+					<ItemData ItemOID="team8" Value="Connan"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2017-08-28 13:07:32"/>
+					<ItemData ItemOID="game1" Value="1"/>
+					<ItemData ItemOID="game2" Value="1"/>
+					<ItemData ItemOID="game3" Value="2"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2017-08-28 13:07:38"/>
+					<ItemData ItemOID="game5" Value="1"/>
+					<ItemData ItemOID="game6" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2017-08-28 13:07:43"/>
+					<ItemData ItemOID="game7" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="4" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="4"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 14:38:58"/>
+					<ItemData ItemOID="team1" Value="Hooks"/>
+					<ItemData ItemOID="team2" Value="Plugins"/>
+					<ItemData ItemOID="team3" Value="Incorporacion de REDCap a procesos"/>
+					<ItemData ItemOID="team4" Value="Lalo"/>
+					<ItemData ItemOID="team5" Value="Luis"/>
+					<ItemData ItemOID="team6" Value="Victor"/>
+					<ItemData ItemOID="team7" Value="Nathan"/>
+					<ItemData ItemOID="team8" Value="Mirari"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2017-08-28 14:41:51"/>
+					<ItemData ItemOID="game1" Value="2"/>
+					<ItemData ItemOID="game2" Value="2"/>
+					<ItemData ItemOID="game3" Value="2"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2017-08-28 14:42:02"/>
+					<ItemData ItemOID="game5" Value="1"/>
+					<ItemData ItemOID="game6" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2017-08-28 14:42:05"/>
+					<ItemData ItemOID="game7" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="5" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="5"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 14:43:46"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="6" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="6"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 14:45:55"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="7" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="7"/>
+					<ItemData ItemOID="teams_timestamp" Value="2017-08-28 14:58:27"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2017-08-28 14:58:44"/>
+					<ItemData ItemOID="game1" Value="1"/>
+					<ItemData ItemOID="game2" Value="2"/>
+					<ItemData ItemOID="game3" Value="1"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2017-08-28 14:58:50"/>
+					<ItemData ItemOID="game5" Value="2"/>
+					<ItemData ItemOID="game6" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2017-08-28 14:58:54"/>
+					<ItemData ItemOID="game7" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="8" redcap:RecordIdField="record_id">
+			<FormData FormOID="Form.teams" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="teams.record_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="record_id" Value="8"/>
+					<ItemData ItemOID="teams_timestamp" Value="2019-04-04 23:53:53"/>
+					<ItemData ItemOID="team1" Value="Cheerios"/>
+					<ItemData ItemOID="team2" Value="Froot Loops"/>
+					<ItemData ItemOID="team3" Value="Frosted Flakes"/>
+					<ItemData ItemOID="team4" Value="Golden Grahams"/>
+					<ItemData ItemOID="team5" Value="Lucky Charms"/>
+					<ItemData ItemOID="team6" Value="Trix"/>
+					<ItemData ItemOID="team7" Value="Pops"/>
+					<ItemData ItemOID="team8" Value="Smacks"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="teams.teams_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="teams_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_1" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_1.round_1_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_timestamp" Value="2019-04-04 23:54:08"/>
+					<ItemData ItemOID="game1" Value="1"/>
+					<ItemData ItemOID="game2" Value="1"/>
+					<ItemData ItemOID="game3" Value="2"/>
+					<ItemData ItemOID="game4" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_1.round_1_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_1_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_2" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_2.round_2_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_timestamp" Value="2019-04-04 23:54:17"/>
+					<ItemData ItemOID="game5" Value="2"/>
+					<ItemData ItemOID="game6" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_2.round_2_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_2_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.round_3" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="round_3.round_3_timestamp" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_timestamp" Value="2019-04-04 23:54:22"/>
+					<ItemData ItemOID="game7" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="round_3.round_3_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="round_3_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+</ClinicalData>
+</ODM>
